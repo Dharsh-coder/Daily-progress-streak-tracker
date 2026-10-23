@@ -1,0 +1,215 @@
+
+/* Activity Records Page */
+
+.records-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+
+.records-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.records-heading h1 {
+  margin: 8px 0;
+  font-size: 2rem;
+}
+
+.records-muted {
+  color: #aaa29c;
+  line-height: 1.6;
+}
+
+.records-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px;
+  margin-bottom: 18px;
+  background: #131314;
+  border: 1px solid #30231e;
+  border-radius: 12px;
+  color: #bcb5b0;
+}
+
+.records-summary strong {
+  color: #ff914d;
+  font-size: 1.4rem;
+}
+
+.records-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: #131314;
+  border: 1px solid #30231e;
+  border-radius: 14px;
+}
+
+.records-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.records-table th {
+  padding: 16px;
+  color: #bcb5b0;
+  background: #1b1918;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.records-table td {
+  padding: 18px 16px;
+  color: #e8e1dc;
+  border-top: 1px solid #302a27;
+  font-size: 0.88rem;
+  vertical-align: middle;
+}
+
+.records-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.records-table tbody tr:hover {
+  background: #1b1816;
+}
+
+.record-title {
+  min-width: 150px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.record-notes {
+  max-width: 240px;
+  margin-top: 6px;
+  color: #928a84;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.difficulty-badge,
+.status-badge {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 6px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.difficulty-badge.easy {
+  color: #9be2ae;
+  background: rgba(60, 160, 85, 0.14);
+}
+
+.difficulty-badge.medium {
+  color: #ffd18a;
+  background: rgba(220, 155, 45, 0.14);
+}
+
+.difficulty-badge.hard {
+  color: #ffaaa0;
+  background: rgba(220, 75, 60, 0.14);
+}
+
+.difficulty-badge.n-a {
+  color: #c7c1bc;
+  background: rgba(160, 155, 150, 0.12);
+}
+
+.status-badge.completed {
+  color: #ffad79;
+  background: rgba(189, 75, 32, 0.16);
+}
+
+.status-badge.in-progress {
+  color: #f5d28c;
+  background: rgba(205, 160, 60, 0.14);
+}
+
+.status-badge.skipped {
+  color: #c7c1bc;
+  background: rgba(160, 155, 150, 0.12);
+}
+
+.record-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.record-actions button {
+  padding: 7px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: transparent;
+}
+
+.edit-button {
+  color: #ffad79;
+  border: 1px solid #754027;
+}
+
+.edit-button:hover {
+  background: rgba(189, 75, 32, 0.14);
+}
+
+.delete-button {
+  color: #ff9d9d;
+  border: 1px solid #663535;
+}
+
+.delete-button:hover:not(:disabled) {
+  background: rgba(200, 65, 65, 0.14);
+}
+
+.record-actions button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+.records-empty {
+  padding: 48px 24px;
+  text-align: center;
+  background: #131314;
+  border: 1px solid #30231e;
+  border-radius: 14px;
+}
+
+.records-empty h2 {
+  margin-top: 0;
+}
+
+.records-empty p {
+  margin-bottom: 24px;
+  color: #aaa29c;
+}
+
+@media (max-width: 700px) {
+  .records-heading h1 {
+    font-size: 1.65rem;
+  }
+
+  .records-table th,
+  .records-table td {
+    padding: 13px 12px;
+  }
+
+  .records-table td {
+    font-size: 0.82rem;
+  }
+}
